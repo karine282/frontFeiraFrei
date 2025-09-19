@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import './buscar.scss';
+import './Buscar.scss';
 import api from "../../api";
 
 export default function BuscarVisitante() {
