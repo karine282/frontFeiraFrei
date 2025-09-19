@@ -1,0 +1,116 @@
+.Container {
+  background: linear-gradient(to bottom, rgba(92,134,238,1), rgba(131,177,230,1), rgba(61,100,144,1));  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+.titulo {
+  background-color: #FF7E0D;
+  color: aliceblue;
+  width: 50%;
+  max-width: 6000px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.texto {
+  background-color: #2D4C98;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1090px;
+  margin-top: 15px;
+  padding: 15px;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: text;
+}
+
+.texto:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.slide-item{
+  width: 100%;
+  height: 24px 0;
+  object-fit: cover;
+}
+
+.back {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #FF7E0D;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 5px;
+  display: block;
+  margin-top: 15px;
+  text-align: left;
+  margin-left: 81%;
+}
+
+.back {
+  display: block;
+  margin-top: 15px;
+  text-align: left;
+  transition: transform 0.3s ease, letter-spacing 0.3s ease;
+  letter-spacing: normal;
+}
+
+.back:hover {
+  transform: scale(1.05);
+}
+
+.swiper-container-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 12px;
+}
+
+.slide-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .slide-img {
+    height: 250px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 1rem;
+    height: auto;
+    line-height: normal;
+    padding: 10px;
+  }
+
+  .texto {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
